@@ -18,4 +18,5 @@ function lanzarDados() {
 
     alert(mensaje);
 }
+
 lanzarDados();
