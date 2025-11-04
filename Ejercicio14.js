@@ -1,6 +1,5 @@
 // Ejercicio 14 - Herencia (Usuario, Cliente y Administrador)
 // Autor : Aleyda Quispe
-
 // Clase base
 class Usuario {
     constructor(nombre, email) {
@@ -12,7 +11,6 @@ class Usuario {
         return "Nombre: " + this.nombre + "\nEmail: " + this.email;
     }
 }
-
 // Subclase Cliente
 class Cliente extends Usuario {
     constructor(nombre, email, nivelFidelidad) {
@@ -24,14 +22,12 @@ class Cliente extends Usuario {
         return super.mostrarInfo() + "\nNivel de fidelidad: " + this.nivelFidelidad;
     }
 }
-
 // Subclase Administrador
 class Administrador extends Usuario {
     constructor(nombre, email, permisos) {
         super(nombre, email);
         this.permisos = permisos; 
     }
-
     mostrarInfo() {
         return super.mostrarInfo() + "\nPermisos: " + this.permisos;
     }
@@ -51,6 +47,5 @@ if (tipo == "1") {
     var permisos = prompt("Ingrese los permisos del administrador (crear, editar, eliminar):");
     var admin1 = new Administrador(nombre, email, permisos);
     alert("Información del administrador:\n" + admin1.mostrarInfo());
-} else {
+} else
     alert("Opción no válida.");
-}
