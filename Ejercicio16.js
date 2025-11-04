@@ -1,6 +1,5 @@
 // Ejercicio 16 - Herencia (Empleado, Programador y ProgramadorSenior)
 // Autor : Aleyda Quispe
-
 // Clase base
 class Empleado {
     constructor(nombre, sueldoBase) {
